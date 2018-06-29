@@ -10,8 +10,8 @@ describe "crazy_string.rb" do
         expect { crazy_strings(1) }.to raise_error(ArgumentError), 'crazy_strings should accept 2 arguments'
         expect { crazy_strings(1,2) }.to_not raise_error(ArgumentError)
       end
-
-
+ 
+473289 
       it "reverses the first string argument" do
         expect(crazy_strings("APPLE", "")).to eq("ELPPA")
       end
